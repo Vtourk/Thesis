@@ -1,5 +1,9 @@
+body{
+	background:grey;
+
+}
 td {
-	border:  2px solid #333;
+	border:  2px solid rgb(230, 10, 10);
 	height:  100px;
 	width:  100px;
 	text-align:  center;
