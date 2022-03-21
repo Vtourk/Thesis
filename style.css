@@ -17,8 +17,12 @@ table {
 	border-collapse: collapse;
 	position: absolute;
 	left: 50%;
-	margin-left: -155px;
-	top: 50px;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	max-width: 800px;
+	height: 80vh;
+	max-height: 800px;
 }
 
 table tr:first-child td {
@@ -41,7 +45,7 @@ table tr td:last-child {
   display: none;
   width: 200px;
   top: 120px;
-  background-color: rgba(100,133,200, 0.7);
+  background-color: rgba(3, 3, 3, 0.438);
   position: absolute;
   left: 50%;
   margin-left: -100px;
