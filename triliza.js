@@ -1,7 +1,7 @@
 let canvas = document.getElementById('triliza'),
     ctx = canvas.getContext('2d'),
     msg = document.getElementById('message'),
-    cellSize = 100,
+    cellSize = 150,
     map = [
         0, 0, 0,
         0, 0, 0,
@@ -48,7 +48,7 @@ function play (cell) {
     if (gameOver) return;
 
     if (map[cell] != BLANK) {
-        msg.textContent = 'Δοκίμασε άλλο κουτί';
+        msg.textContent = 'Try a different box';
         return;
     }
 
@@ -58,11 +58,11 @@ function play (cell) {
 
     if (winCheck != 0) {
         gameOver = true;
-        msg.textContent = ((currentPlayer == X)? 'O X': 'O O') + '  Nίκησε!';
+        msg.textContent = ((currentPlayer == X)? ' X': ' O') + '  Won';
         return;
     } else if (map.indexOf(BLANK) == -1) {
         gameOver = true;
-        msg.textContent = 'Ισοπαλία';
+        msg.textContent = 'Tie';
         return;
     }
 
