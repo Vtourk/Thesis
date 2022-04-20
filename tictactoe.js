@@ -181,3 +181,19 @@ function winConditions(winCheck,currentPlayer) {
 function popUpMsg() {
     alert("Try a different Box");
 }
+//restart game
+const restartButton = document.getElementById("restart");
+// add event listener to restart button
+restartButton.addEventListener("click", () =>{
+    //reseting game variables
+    mapBoard = [
+        0, 0, 0,
+        0, 0, 0,
+        0, 0, 0,
+    ],
+    humanPlayer = X,
+    endGame = false;
+    //reset outcome text
+    msg.textContent = "New game X's Turn"  
+})
+
