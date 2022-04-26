@@ -1,8 +1,8 @@
 body{
-    background-color: grey;
+    background-color: rgb(124, 108, 108);
 }
 button {
-    background-color: yellow;
+    background-color: brown;
     border: none;
     border-radius: 0.5rem;
     font-family: inherit;
@@ -13,3 +13,7 @@ button {
         cursor: pointer;
         background-color: rgb(134, 36, 36);
     }
+#message{
+    font-size: xx-large;
+    color: black;
+}
